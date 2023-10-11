@@ -1,0 +1,85 @@
+footer {
+  
+  background-color: #292929;
+}
+
+section#footernav {
+  
+}
+section#footernav div.wrap {
+  
+}
+section#footernav div.wrap nav.fnb {
+  
+  line-height: 2;
+  padding: 50px 0;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap {
+  
+  display: flex;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 {
+  
+  width: 25%;
+  text-align: center;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 a.fnb-dep1-link {
+  
+  color: white;
+  font-weight: 200;
+  line-height: 3;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 div.fnb-dep2-cont {
+  
+  display: flex;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 div.fnb-dep2-cont ul.fnb-dep2-wrap {
+  
+  width: 50%;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap {
+  
+  font-size: 14px;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 {
+  
+  position: relative;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 a.fnb-dep2-link {
+  
+  color: #7b7b7b;
+  display: block;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 ul.fnb-dep3-wrap {
+  
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  top: 5px;
+  width: 150px;
+  background-color: #4e4e4e;
+  padding: 7.5px;
+  display: none;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 ul.fnb-dep3-wrap::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  background-color: #4e4e4e;
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 ul.fnb-dep3-wrap li.fnb-dep3 {
+  
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 ul.fnb-dep3-wrap li.fnb-dep3 a.fnb-dep3-link {
+  
+  color: #7b7b7b;
+  display: block;
+}
+section#footernav div.wrap nav.fnb ul.fnb-wrap li.fnb-dep1 ul.fnb-dep2-wrap li.fnb-dep2 ul.fnb-dep3-wrap li.fnb-dep3 a.fnb-dep3-link:hover {
+  color: white;
+}

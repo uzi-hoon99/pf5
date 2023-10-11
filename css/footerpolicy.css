@@ -1,0 +1,109 @@
+section#footerpolicy {
+  
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #7b7b7b;
+}
+section#footerpolicy div.wrap {
+  
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+section#footerpolicy div.wrap nav.policy {
+  
+}
+section#footerpolicy div.wrap nav.policy ul.policy-wrap {
+  
+  display: flex;
+}
+section#footerpolicy div.wrap nav.policy ul.policy-wrap li.policy-dep1 {
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section#footerpolicy div.wrap nav.policy ul.policy-wrap li.policy-dep1:nth-child(n+2)::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #7b7b7b;
+  display: block;
+  position: absolute;
+}
+section#footerpolicy div.wrap nav.policy ul.policy-wrap li.policy-dep1 a.policy-dep1-link {
+  
+  padding: 0 15px;
+  display: block;
+  line-height: 3;
+  color: #7b7b7b;
+}
+section#footerpolicy div.wrap nav.policy ul.policy-wrap li.policy-dep1:nth-child(1) a.policy-dep1-link {
+  color: #0d5ffb;
+}
+section#footerpolicy div.wrap nav.sf {
+  
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap {
+  
+  display: flex;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 {
+  
+  position: relative;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 p.sf-title {
+  
+  padding: 0px 20px;
+  display: block;
+  line-height: 3;
+  border-left: 1px solid #7b7b7b;
+  color: white;
+  display: flex;
+  gap: 10px
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 p.sf-title svg {
+  width: 16px;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 p.sf-title-on {
+  background-color: #4e4e4e;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 ul.sf-dep2-wrap {
+  
+  position: absolute;
+  line-height: 2;
+  background-color: #4e4e4e;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1:nth-child(1) ul.sf-dep2-wrap {
+  
+  bottom: 35px;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1:nth-child(2) ul.sf-dep2-wrap {
+  
+  bottom: 35px;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 ul.sf-dep2-wrap li.sf-dep2 {
+  
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 ul.sf-dep2-wrap li.sf-dep2 a.sf-dep2-link {
+  
+  display: block;
+  color: #7b7b7b;
+}
+section#footerpolicy div.wrap nav.sf ul.sf-wrap li.sf-dep1 ul.sf-dep2-wrap li.sf-dep2 a.sf-dep2-link:hover {
+  color: white;
+}
+
+section#copyright {
+  padding: 50px 0 ;
+}
+section#copyright p {
+  text-align: center;
+  color: #545454;
+  font-size: 12px;
+  line-height: 2;
+}

@@ -1,0 +1,75 @@
+section#main-sns {
+  
+  padding-bottom: 100px;
+}
+section#main-sns div.wrap {
+  
+}
+section#main-sns div.wrap h2 {
+  
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 5;
+}
+section#main-sns div.wrap ul.sns-wrap {
+  
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list {
+  
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list a.sns-link {
+  
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list a.sns-link img {
+  
+  border-radius: 100%;
+  width: 100px;
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list a.sns-link div.info-wrap {
+  
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list a.sns-link div.info-wrap h3 {
+  
+  font-size: 14px;
+  line-height: 2.5;
+  font-weight: 500;
+}
+section#main-sns div.wrap ul.sns-wrap li.sns-list a.sns-link div.info-wrap p {
+  
+  line-height: 1.5;
+  font-size: 12px;
+  color: #777;
+}
+
+section#main-sns .slick-dotted.slick-slider {
+  
+  margin-bottom: 0;
+}
+section#main-sns .slick-dots {
+  
+  z-index: 10;
+  bottom: -50px;
+}
+section#main-sns .slick-dots li {
+  
+  width: 12.5px;
+  height: 12.5px;
+  margin: 0 5px;
+}
+section#main-sns .slick-dots li button {
+  background-color: black;
+  border-radius: 100%;
+  width: 12.5px;
+  height: 12.5px;
+  padding: 0;
+  opacity: 0.5;
+}
+section#main-sns .slick-dots li.slick-active button {
+  opacity: 1;
+}
+section#main-sns .slick-dots li button:before {
+  display: none;
+}

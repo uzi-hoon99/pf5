@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(UZI)하이트 진로</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/main-title-slick.css">
+    <link rel="stylesheet" href="css/main-contents.css">
+    <link rel="stylesheet" href="css/sns.css">
+    <link rel="stylesheet" href="css/footernav.css">
+    <link rel="stylesheet" href="css/footerpolicy.css">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".gnb-dep1").hover(
+                function(){
+                    $(this).find(".gnb-inner").stop().slideDown();
+                    $(this).find(".gnb-inner").removeClass("fadeout").addClass("fadein");
+                },
+                function(){
+                    $(this).find(".gnb-inner").stop().slideUp();
+                    $(this).find(".gnb-inner").removeClass("fadein").addClass("fadeout");
+                }
+            )
+
+            $(".service-lang-list").hide();
+            $(".service-list").hover(
+                function(){
+                    $(this).find(".service-lang-list").show();
+                },
+                function(){
+                    $(this).find(".service-lang-list").hide();
+                }
+            )
+
+            $(".aside-dep1").hover(
+                function(){
+                    $("aside").css("right","100px");
+                    $(this).children(".aside-inner").stop().fadeIn(0);
+                    $(this).siblings().children(".aside-inner").hide();
+                    $(this).children(".aside-dep1-link").addClass("aside-dep1-link-on");
+                    $(this).children(".aside-inner").addClass("aside-inner-on");
+                },
+                function(){
+                    $("aside").css("right","0");
+                    $(this).children(".aside-inner").stop().delay(500).fadeOut(0);
+                    $(this).children(".aside-dep1-link").removeClass("aside-dep1-link-on");
+                    $(this).children(".aside-inner").removeClass("aside-inner-on");
+                }
+            )
+            
+            $(".fnb-dep2").hover(
+                function(){
+                    $(this).find(".fnb-dep3-wrap").show();
+                },
+                function(){
+                    $(this).find(".fnb-dep3-wrap").hide();
+                }
+            )
+
+            $(".sf-dep1").hover(
+                function(){
+                    $(this).find(".sf-title").addClass("sf-title-on");
+                    $(this).find(".up").addClass("hide");
+                    $(this).find(".down").removeClass("hide");
+                    $(this).find(".sf-dep2-wrap").stop().slideDown();
+                },
+                function(){
+                    $(this).find(".sf-title").removeClass("sf-title-on");
+                    $(this).find(".down").addClass("hide");
+                    $(this).find(".up").removeClass("hide");
+                    $(this).find(".sf-dep2-wrap").stop().slideUp();
+                }
+            )
+        });
+    </script>
+
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main-title-wrap").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true
+            });
+            $(".sns-wrap").slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+                arrows : false
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="wrap">
+                <h1><a href=""><img src="img/logo.png" alt="하이트 진로 로고"></a></h1>
+            </div>
+        </div>
+        <div class="gnb-wrap">
+            <div class="wrap">
+                <nav class="menu">
+                    <ul class="gnb-dep1-wrap">
+                        <li class="gnb-dep1 company">
+                            <a href="" class="gnb-dep1-link">COMPANY</a>
+                            <div class="gnb-inner hide">
+                                <div class="gnb-inner-wrap">
+                                    <ul class="gnb-dep2-wrap">
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">인사말</a>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">경영철학</a>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">연혁</a>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Introduction</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">CI</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">하이트진로 폰트</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">국제화</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">계열사안내</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Investment</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">IR정보</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">전자공고</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공시</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공시정보 관리규정</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Location</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">본사</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">지점</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공장</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">계열사</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">해외법인</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Factory</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공장소개</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">견학신청</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">신청상태</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Recruit</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">All about HITEJINRO</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">인재상</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">직무소개</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">채용절차</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">복리후생</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">채용공고</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">지원자도우미</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Sports</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">골프선수</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">골프대회</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">기타 스포츠</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnb-dep1 socialmedia">
+                            <a href="" class="gnb-dep1-link">SOCIAL & MEDIA</a>
+                            <div class="gnb-inner hide">
+                                <div class="gnb-inner-wrap">
+                                    <ul class="gnb-dep2-wrap">
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Social board</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">당신의 인생을 더 큰 즐거움과 에너지로<br>채우는 하이트진로의 다양한 소셜채널을<br>지금 바로 확인해 보세요!</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Media</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공지사항</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">보도자료</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">광고 자료관</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">제품 자료관</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">마케팅 성공사례</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">하이트 성공사례</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">참이슬 성공신화</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnb-dep1 esg">
+                            <a href="" class="gnb-dep1-link">ESG</a>
+                            <div class="gnb-inner hide">
+                                <div class="gnb-inner-wrap">
+                                    <ul class="gnb-dep2-wrap">
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">지속가능환경경영</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">Introduction</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">2050 to zerO!</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">CSV</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">Management</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">식품안전경영</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">경영방침</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">인증현황</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">Q-UP System</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">안전보건경영</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">경영방침 및 추진과제</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">인증현황</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">안전보건활동 현황</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">CSR</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">&Joy</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">분야별 사회공헌</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">꿈 바우처</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Ethical Management</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">동반성장</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">청음고(부정제보)</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">공정거래자율준수</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">기업지배구조</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">이사회 현황</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">이사회 내 위원회 현황</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">정기 주주총회<br>의결권 행사 현황</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">ESG 평가 등급</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">지속가능경영보고서</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gnb-dep1 customercenter">
+                            <a href="" class="gnb-dep1-link">CUSTOMER CENTER</a>
+                            <div class="gnb-inner hide">
+                                <div class="gnb-inner-wrap">
+                                    <ul class="gnb-dep2-wrap">
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">FAQ</a>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">Q&A</a>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">주류상식 가이드</a>
+                                            <ul class="gnb-dep3-wrap">
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">맥주 가이드</a>
+                                                </li>
+                                                <li class="gnb-dep3">
+                                                    <a href="" class="gnb-dep3-link">소주 가이드</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="gnb-dep2">
+                                            <a href="" class="gnb-dep2-link">기타</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="service">
+                    <ul class="service-wrap">
+                        <li class="service-list">
+                            <a href="" class="service-link">LOGIN</a>
+                        </li>
+                        <li class="service-list">
+                            <a href="" class="service-link">JOIN</a>
+                        </li>
+                        <li class="service-list">
+                            <a href="" class="service-link">RECRUIT</a>
+                        </li>
+                        <li class="service-list">
+                            <a href="" class="service-link">LANGUAGE</a>
+                            <ul class="service-lang-list">
+                                <li class="service-lang">
+                                    <a href="" class="service-lang-link">ENGLISH</a>
+                                </li>
+                                <li class="service-lang">
+                                    <a href="" class="service-lang-link">JAPANESE</a>
+                                </li>
+                                <li class="service-lang">
+                                    <a href="" class="service-lang-link">CHINESE</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <h2>BRAND</h2>
+        <nav class="asidemenu">
+            <ul class="aside-dep1-wrap">
+                <li class="aside-dep1 aside-dep1-a">
+                    <a href="" class="aside-dep1-link">맥주</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">캘리</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">테라</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">하이트</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">맥스</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-e">
+                                <a href="" class="aside-dep2-link">에스라이트</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-f">
+                                <a href="" class="aside-dep2-link">스타우트</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-b">
+                    <a href="" class="aside-dep1-link">소주</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">참이슬후레쉬</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">참이슬오리지널</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">진로</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">진로1924</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-e">
+                                <a href="" class="aside-dep2-link">일품진로</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-f">
+                                <a href="" class="aside-dep2-link">일품진로오크</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-g">
+                                <a href="" class="aside-dep2-link">일품진로23</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-h">
+                                <a href="" class="aside-dep2-link">진로골드</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-i">
+                                <a href="" class="aside-dep2-link">참이슬담금주</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-c">
+                    <a href="" class="aside-dep1-link">위스키</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">더클래스1933</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-d">
+                    <a href="" class="aside-dep1-link">와인</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">진로레드와인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-e">
+                    <a href="" class="aside-dep1-link">수입와인</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">프랑스</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">이탈리아</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">스페인</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">독일</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-e">
+                                <a href="" class="aside-dep2-link">미국</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-f">
+                                <a href="" class="aside-dep2-link">캐나다</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-g">
+                                <a href="" class="aside-dep2-link">칠레</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-h">
+                                <a href="" class="aside-dep2-link">아르헨티나</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-i">
+                                <a href="" class="aside-dep2-link">호주</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-j">
+                                <a href="" class="aside-dep2-link">뉴질랜드</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-f">
+                    <a href="" class="aside-dep1-link">사케</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">키쿠스이</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">다카시미즈</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">마보로시</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">아마노토</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-g">
+                    <a href="" class="aside-dep1-link">기타주류</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">필라이트</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">이슬톡톡</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">망고링고</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">비타500</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-e">
+                                <a href="" class="aside-dep2-link">아이셔</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-f">
+                                <a href="" class="aside-dep2-link">메로나</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-g">
+                                <a href="" class="aside-dep2-link">자몽</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-h">
+                                <a href="" class="aside-dep2-link">청포도</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-i">
+                                <a href="" class="aside-dep2-link">매화수</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-j">
+                                <a href="" class="aside-dep2-link">진로와인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="aside-dep1 aside-dep1-h">
+                    <a href="" class="aside-dep1-link">인터내셔널</a>
+                    <div class="aside-inner hide">
+                        <ul class="aside-dep2-wrap">
+                            <li class="aside-dep2 aside-dep2-a">
+                                <a href="" class="aside-dep2-link">블랑</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-b">
+                                <a href="" class="aside-dep2-link">써머스비</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-c">
+                                <a href="" class="aside-dep2-link">파울라너</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-d">
+                                <a href="" class="aside-dep2-link">기린</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-e">
+                                <a href="" class="aside-dep2-link">싱하</a>
+                            </li>
+                            <li class="aside-dep2 aside-dep2-f">
+                                <a href="" class="aside-dep2-link">스컬핀</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="main-title">
+            <ul class="main-title-wrap">
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main1.png" alt="1">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main2.png" alt="2">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main3.jpg" alt="3">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main4.jpg" alt="4">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main5.png" alt="5">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main6.png" alt="6">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main7.png" alt="7">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main8.png" alt="8">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main9.png" alt="9">
+                    </a>
+                </li>
+                <li class="main-title-list">
+                    <a href="" class="main-title-link">
+                        <img src="img/main/main10.jpg" alt="10
+                        ">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="main-contents">
+            <div class="wrap">
+                <h2>사용자들이 가장 많이 찾으신 컨텐츠를 소개합니다</h2>
+                <ul class="main-contents-wrap">
+                    <li class="main-contents1">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont1.png" alt="1">
+                            <div class="main-contents-info">
+                                <p class="info">국내유일 청정 대나무숯으로<br>4번 걸러 더 깨끗해진<br>참이슬 fresh</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents2">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont2.png" alt="2">
+                            <div class="main-contents-info">
+                                <p class="info">청정라거<br>시대개막<br>TERRA</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents3">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont3.jpg" alt="3">
+                            <div class="main-contents-info">
+                                <p class="info">언론 속 하이트진로의<br>다양한 소식을 알려 드립니다.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents4">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont4.jpg" alt="4">
+                            <div class="main-contents-info">
+                                <p class="info">덴마크 프리미엄 맥아 100%<br>- 더블 숙성 라거 켈리</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents5">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont5.png" alt="5">
+                            <div class="main-contents-info">
+                                <p class="info">하이트진로의 사회공헌 활동은<br>모두가 즐겁고 행복한 세상을<br>만들기 위한 실천입니다.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents6">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont6.jpg" alt="6">
+                            <div class="main-contents-info">
+                                <p class="info">EXTRA COLD 공법으로<br>더 차갑게 돌아왔다.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents7">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont7.png" alt="7">
+                            <div class="main-contents-info">
+                                <p class="info">진로 이즈 백!<br>소주의 원조, 진로가 돌아왔다.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents8">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont8.jpg" alt="8">
+                            <div class="main-contents-info">
+                                <p class="info">하이트진로의 최신 광고영상을 소개합니다.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-contents9">
+                        <a href="" class="main-contents-link">
+                            <img src="img/maincont/maincont9.jpg" alt="9">
+                            <div class="main-contents-info">
+                                <p class="info">하이트진로만의 최첨단 설비와<br>친황경이념이 담긴 생산공정을<br>직접 만나보세요.</p>
+                                <p class="view">LEARN MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main-sns">
+            <div class="wrap">
+                <h2>최신 하이트진로 SNS</h2>
+                <ul class="sns-wrap">
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns1.png" alt="1">
+                            <div class="info-wrap">
+                                <h3>FACEBOOK</h3>
+                                <p>내가 만든 꺼비떡~<br>너를 위해 빚었껍🐸</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns2.png" alt="2">
+                            <div class="info-wrap">
+                                <h3>INSTAGRAM</h3>
+                                <p>너무 반짝반짝 눈이부셔 > <<br>이슬이 너너너너너~🎵</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns3.png" alt="3">
+                            <div class="info-wrap">
+                                <h3>BLOG</h3>
+                                <p>추석 추천 메뉴!<br>바삭한 새우전과 켈리의 완벽한 궁합</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns4.png" alt="4">
+                            <div class="info-wrap">
+                                <h3>FACEBOOK</h3>
+                                <p>정답을 찾았다!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns5.png" alt="5">
+                            <div class="info-wrap">
+                                <h3>INSTAGRAM</h3>
+                                <p>꿀맛 나는 명품쏘맥 #켈리백 을 만나는 순간<br>내가 바로 명품 화보 속 주인공 ✨</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns6.png" alt="6">
+                            <div class="info-wrap">
+                                <h3>BLOG</h3>
+                                <p>말도 안되게 귀여운 필리 ON!<br>필리 라탄 무드등 만들기</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns7.png" alt="7">
+                            <div class="info-wrap">
+                                <h3>FACEBOOK</h3>
+                                <p>이거 받으면,,,<br>나랑 사귀는거다,,,?</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns8.png" alt="8">
+                            <div class="info-wrap">
+                                <h3>INSTAGRAM</h3>
+                                <p>진로X와디즈 IS BACK!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sns-list">
+                        <a href="" class="sns-link">
+                            <img src="img/sns/sns9.png" alt="9">
+                            <div class="info-wrap">
+                                <h3>BLOG</h3>
+                                <p>충성! 이르메라 갔다가 개강!🎵<br>충성송 챌린지 촬영 현장 스케치</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footernav">
+            <div class="wrap">
+                <nav class="fnb">
+                    <ul class="fnb-wrap">
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">COMPANY</a>
+                            <div class="fnb-dep2-cont">
+                                <ul class="fnb-dep2-wrap">
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">인사말</a>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">경영철학</a>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">연혁</a>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">Introduction</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">CI</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">하이트진로 폰트</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">국제화</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">계열사안내</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">Investment</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">IR정보</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">전자공고</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">공시</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">공시정보 관리규정</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="fnb-dep2-wrap">
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">Location</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">본사</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">지점</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">공장</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">해외법인</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">계열사</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">Factory</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">공장소개</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">견학신청</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">신청상태</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">Recruit</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">All about HITEJINRO</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">인재상</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">직무소개</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">채용절차</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">복리후생</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">채용공고</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">지원자도우미</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fnb-dep2">
+                                        <a href="" class="fnb-dep2-link">sports</a>
+                                        <ul class="fnb-dep3-wrap">
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">골프선수</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">골프대회</a>
+                                            </li>
+                                            <li class="fnb-dep3">
+                                                <a href="" class="fnb-dep3-link">기타 스포츠</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">COMPANY</a>
+                            <ul class="fnb-dep2-wrap">
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">인사말</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">경영철학</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">연혁</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Introduction</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">CI</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">하이트진로 폰트</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">국제화</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">계열사안내</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Investment</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">IR정보</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">전자공고</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">공시</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">공시정보 관리규정</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">SOCIAL & MEDIA</a>
+                            <ul class="fnb-dep2-wrap">
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Social board</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Media</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">공지사항</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">보도자료</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">광고 자료관</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">제품 자료관</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">마케팅 성공사례</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">하이트 성공사례</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">참이슬 성공신화</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">ESG</a>
+                            <ul class="fnb-dep2-wrap">
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">지속가능환경경영</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">Introduction</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">2050 to zerO!</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">CSV</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">Management</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">식품안전경영</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">경영방침</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">인증현황</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">Q-UP System</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">안전보건경영</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">경영방침 및 추진과제</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">인증현황</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">안전보건활동 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">CSR</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">&Joy</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">분야별 사회공헌</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">꿈 바우처</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">하이트진로 장학생</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Ethical Management</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">동반성장</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">청음고(부정제보)</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">공정거래자율준수</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">기업지배구조</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">이사회 현황</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">이사회 내 위원회 현황</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">정기 주주총회 의결권 행사 현황</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">ESG 평가 등급</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">지속가능경영보고서</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">CUSTOMER CENTER</a>
+                            <ul class="fnb-dep2-wrap">
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">FAQ</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">Q&A</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">주류상식 가이드</a>
+                                    <ul class="fnb-dep3-wrap">
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">맥주 가이드</a>
+                                        </li>
+                                        <li class="fnb-dep3">
+                                            <a href="" class="fnb-dep3-link">소주가이드</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">기타</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fnb-dep1">
+                            <a href="" class="fnb-dep1-link">BRAND</a>
+                            <ul class="fnb-dep2-wrap">
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">맥주</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">소주</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">위스키</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">와인</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">수입와인</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">사케</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">기타주류</a>
+                                </li>
+                                <li class="fnb-dep2">
+                                    <a href="" class="fnb-dep2-link">인터내셔널</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="footerpolicy">
+            <div class="wrap">
+                <nav class="policy">
+                    <ul class="policy-wrap">
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">개인정보처리방침</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">회원이용약관</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">이메일무단수집거부</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">동반성장</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">청음고(부정제보)</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">공시정보 관리규정</a>
+                        </li>
+                        <li class="policy-dep1">
+                            <a href="" class="policy-dep1-link">공정거래자율준수</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="sf">
+                    <ul class="sf-wrap">
+                        <li class="sf-dep1">
+                            <p class="sf-title">
+                                하이트진로 SNS
+                                <svg xmlns="http://www.w3.org/2000/svg" class="up" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 328l144-144 144 144"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="down hide" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                            </p>
+                            <ul class="sf-dep2-wrap">
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">페이스북</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">트위터</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">유튜브</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">블로그</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">사회공헌 블로그</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">와인 블로그</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">켈리 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">테라 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">하이트 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">맥스 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">필라이트 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">참이슬 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">진로 인스타그램</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">진로 프리미엄 소주</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">이슬톡톡 인스타그램</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sf-dep1">
+                            <p class="sf-title">
+                                패밀리 사이트
+                                <svg xmlns="http://www.w3.org/2000/svg" class="up" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 328l144-144 144 144"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="down hide" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                            </p>
+                            <ul class="sf-dep2-wrap">
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">하이트진로 홀딩스</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">진로 아메리카</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">하이트진로음료㈜</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">블루해런</a>
+                                </li>
+                                <li class="sf-dep2">
+                                    <a href="" class="sf-dep2-link">진로 재팬</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>(06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 / 대표전화 080-210-0150 / 사업자등록번호 214-81-00777</p>
+            <p>Copyright© 2016 HITEJINRO CO.LTD. ALL RIGHTS RESERVED.</p>
+        </section>
+        <section id="portfolio">
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+</html>
